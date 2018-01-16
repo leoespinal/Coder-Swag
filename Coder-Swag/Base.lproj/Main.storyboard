@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nwk-aQ-Pdi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nwk-aQ-Pdi">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,15 +36,19 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="141" id="Drp-By-xge" customClass="CategoryCell" customModule="Coder_Swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="141"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Drp-By-xge" id="NbN-kb-U3F">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Drp-By-xge" id="NbN-kb-U3F">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="sDj-bD-Nh4">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="sDj-bD-Nh4">
                                                     <rect key="frame" x="0.0" y="3" width="375" height="134.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="Ntf-5h-OmJ"/>
+                                                        <constraint firstAttribute="width" constant="375" id="kzf-ow-2ph"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbS-w9-HHi">
-                                                    <rect key="frame" x="106" y="52.5" width="162" height="36"/>
+                                                    <rect key="frame" x="106" y="-18" width="162" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="36" id="Cho-IU-8vF"/>
                                                         <constraint firstAttribute="width" constant="162" id="tNb-Ra-LJw"/>
@@ -58,9 +62,9 @@
                                                 <constraint firstItem="sDj-bD-Nh4" firstAttribute="top" secondItem="NbN-kb-U3F" secondAttribute="top" constant="3" id="5Xo-hC-WW2"/>
                                                 <constraint firstAttribute="trailing" secondItem="sDj-bD-Nh4" secondAttribute="trailing" id="9X2-6D-y3R"/>
                                                 <constraint firstAttribute="bottom" secondItem="sDj-bD-Nh4" secondAttribute="bottom" constant="3" id="TfR-AW-wOH"/>
-                                                <constraint firstItem="nbS-w9-HHi" firstAttribute="centerY" secondItem="NbN-kb-U3F" secondAttribute="centerY" id="dzy-eC-OKe"/>
+                                                <constraint firstItem="nbS-w9-HHi" firstAttribute="centerX" secondItem="NbN-kb-U3F" secondAttribute="centerX" id="e0d-No-CmA"/>
                                                 <constraint firstItem="sDj-bD-Nh4" firstAttribute="leading" secondItem="NbN-kb-U3F" secondAttribute="leading" id="miq-6k-cPf"/>
-                                                <constraint firstItem="nbS-w9-HHi" firstAttribute="centerX" secondItem="NbN-kb-U3F" secondAttribute="centerX" id="qtx-5Y-4Hn"/>
+                                                <constraint firstItem="nbS-w9-HHi" firstAttribute="centerY" secondItem="NbN-kb-U3F" secondAttribute="centerY" id="neM-ey-hIP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
