@@ -15,6 +15,11 @@
 		B23E4AD92005CC7D0028C6F6 /* Coder_SwagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23E4AD82005CC7D0028C6F6 /* Coder_SwagTests.swift */; };
 		B23E4AE72005DA170028C6F6 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23E4AE62005DA170028C6F6 /* CategoryCell.swift */; };
 		B23E4AE82005DA170028C6F6 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23E4AE62005DA170028C6F6 /* CategoryCell.swift */; };
+		B23E4AEA200DAA330028C6F6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23E4AE9200DAA330028C6F6 /* Category.swift */; };
+		B23E4AEB200DAA330028C6F6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23E4AE9200DAA330028C6F6 /* Category.swift */; };
+		B23E4AEE200DABB00028C6F6 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23E4AED200DABB00028C6F6 /* DataService.swift */; };
+		B23E4AEF200DABB00028C6F6 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23E4AED200DABB00028C6F6 /* DataService.swift */; };
+		B23E4AF0200DB0AA0028C6F6 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23E4AC52005CC7D0028C6F6 /* CategoriesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +44,8 @@
 		B23E4AD82005CC7D0028C6F6 /* Coder_SwagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coder_SwagTests.swift; sourceTree = "<group>"; };
 		B23E4ADA2005CC7D0028C6F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B23E4AE62005DA170028C6F6 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		B23E4AE9200DAA330028C6F6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		B23E4AED200DABB00028C6F6 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +87,7 @@
 		B23E4AC22005CC7D0028C6F6 /* Coder-Swag */ = {
 			isa = PBXGroup;
 			children = (
+				B23E4AEC200DABA00028C6F6 /* Services */,
 				B23E4AE52005D9940028C6F6 /* View */,
 				B23E4AE42005D9870028C6F6 /* Model */,
 				B23E4AE32005D97D0028C6F6 /* Controller */,
@@ -112,6 +120,7 @@
 		B23E4AE42005D9870028C6F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B23E4AE9200DAA330028C6F6 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,6 +131,14 @@
 				B23E4AE62005DA170028C6F6 /* CategoryCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B23E4AEC200DABA00028C6F6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B23E4AED200DABB00028C6F6 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +247,8 @@
 				B23E4AC62005CC7D0028C6F6 /* CategoriesVC.swift in Sources */,
 				B23E4AC42005CC7D0028C6F6 /* AppDelegate.swift in Sources */,
 				B23E4AE72005DA170028C6F6 /* CategoryCell.swift in Sources */,
+				B23E4AEA200DAA330028C6F6 /* Category.swift in Sources */,
+				B23E4AEE200DABB00028C6F6 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +258,9 @@
 			files = (
 				B23E4AD92005CC7D0028C6F6 /* Coder_SwagTests.swift in Sources */,
 				B23E4AE82005DA170028C6F6 /* CategoryCell.swift in Sources */,
+				B23E4AEB200DAA330028C6F6 /* Category.swift in Sources */,
+				B23E4AEF200DABB00028C6F6 /* DataService.swift in Sources */,
+				B23E4AF0200DB0AA0028C6F6 /* CategoriesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,11 +405,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S2W97NUM9L;
 				INFOPLIST_FILE = "Coder-Swag/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leoespinal.Coder-Swag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -397,11 +422,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S2W97NUM9L;
 				INFOPLIST_FILE = "Coder-Swag/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leoespinal.Coder-Swag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

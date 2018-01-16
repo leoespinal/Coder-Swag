@@ -29,19 +29,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cpA-JV-YVD">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cpA-JV-YVD">
                                 <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="141" id="Drp-By-xge" customClass="CategoryCell" customModule="Coder_Swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="141" id="Drp-By-xge" customClass="CategoryCell" customModule="Coder_Swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="141"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Drp-By-xge" id="NbN-kb-U3F">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="sDj-bD-Nh4">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="140.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="134.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbS-w9-HHi">
                                                     <rect key="frame" x="106" y="52.5" width="162" height="36"/>
@@ -55,9 +55,9 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="sDj-bD-Nh4" secondAttribute="bottom" id="7bV-Ml-D0e"/>
+                                                <constraint firstItem="sDj-bD-Nh4" firstAttribute="top" secondItem="NbN-kb-U3F" secondAttribute="top" constant="3" id="5Xo-hC-WW2"/>
                                                 <constraint firstAttribute="trailing" secondItem="sDj-bD-Nh4" secondAttribute="trailing" id="9X2-6D-y3R"/>
-                                                <constraint firstItem="sDj-bD-Nh4" firstAttribute="top" secondItem="NbN-kb-U3F" secondAttribute="top" id="PUm-ht-AHr"/>
+                                                <constraint firstAttribute="bottom" secondItem="sDj-bD-Nh4" secondAttribute="bottom" constant="3" id="TfR-AW-wOH"/>
                                                 <constraint firstItem="nbS-w9-HHi" firstAttribute="centerY" secondItem="NbN-kb-U3F" secondAttribute="centerY" id="dzy-eC-OKe"/>
                                                 <constraint firstItem="sDj-bD-Nh4" firstAttribute="leading" secondItem="NbN-kb-U3F" secondAttribute="leading" id="miq-6k-cPf"/>
                                                 <constraint firstItem="nbS-w9-HHi" firstAttribute="centerX" secondItem="NbN-kb-U3F" secondAttribute="centerX" id="qtx-5Y-4Hn"/>
